@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+#confirmation{
+    font-family: 'Mulish', sans-serif;
+    margin-top:8%;
+    width: 60%;
+    padding:3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+@media only screen and (min-width:150px) and (max-width:768px){
+    #confirmation{
+        width:95%;
+        margin-top:20%;
+        margin-bottom:20%;
+        padding:10%;
+    }
+}

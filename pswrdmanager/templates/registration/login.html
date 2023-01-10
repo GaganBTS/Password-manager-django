@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block title%} Log In{%endblock%}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'registration.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="container" id="regdiv">
+        <h2><strong>Log In</strong></h2>
+    <form method="post">
+        {% csrf_token %}
+        {% load widget_tweaks %}
+        {% if form.non_field_errors%}<div class="alert alert-danger"> {{form.non_field_errors}}</div>{% endif %}
+        {% for field in form %}
+            <div class="form-group {% if field.errors %} alert alert-danger {% endif %}">
+            {{ field.errors }}
+                <strong>{{ field.label_tag }}</strong>
+            {% render_field field class='form-control' %}
+              {% if field.help_text %}<small class="text-muted"> {{field.help_text}}</small>{% endif %}
+            </div>
+            {% endfor %}
+        <input  onclick="myFunction()" style="margin-bottom:3%;" type="checkbox" ><span style="margin-left:4px; margin-bottom:3%;">See password</span>
+    <a class="pswrdreset" href="{% url 'reset_pswrd' %}" style="display:block; margin-bottom:1.2%;">Forgot password?</a>
+        <button type="submit" class="btn btn-primary" id="regbtn">Log in</button>
+    </form>
+    </div>
+        <script>
+    function myFunction() {
+  var x = document.getElementById("id_password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+{% endblock %}

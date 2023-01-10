@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+#contact{
+    margin-top:8%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    margin-bottom: 4%;
+    font-family: 'Mulish', sans-serif;
+    
+
+    
+}
+#contact-form .text-center{
+    margin-bottom:2%;
+
+}
+#contact form{
+    text-align: center;
+    background-color: #FFFFFF12;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 2% 0% 2% 0%;
+    
+}
+#id_email, #id_name, #id_message{
+    outline: none;
+    border: 3px solid #3b71ca;
+    width: 50%;
+    border-radius: 10px;
+   padding:0.6%;
+    background-color: #FFFFFF12;
+}
+#id_email:focus,#id_name:focus,#id_message:focus{
+    background-color: whitesmoke;
+}
+
+.form-group{
+    margin-bottom:1.5%;
+    
+}
+#contact form .btn{
+    width: 50%;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+@media only screen and (min-width:150px) and (max-width:768px){
+    #contact{
+        margin-top:20%;
+        width: 97%;
+    }
+    #id_email, #id_name, #id_message{
+        width: 95%;
+        padding: 4%;
+    }
+    #contact form .btn{
+        width: 95%;
+        padding:4% 10%;
+    }
+    #contact-form .text-center{
+        margin-bottom: 4%;
+    }
+}

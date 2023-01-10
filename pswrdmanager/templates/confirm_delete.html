@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+Delete Secret
+{% endblock %}
+{% block css %}
+<link rel='stylesheet' href="{% static 'confirm_delete.css'%}">
+{% endblock %}
+{% block content %}
+{% if secret.user == request.user%}
+<div id='confirmation'>
+    <h1>Are you sure you want to delete '{{ secret.website }}' secret?</h1>
+    <form action="{% url 'confirm_delete' secret.id%}" method='post'>
+        {% csrf_token %}
+    <button type='submit' class='btn btn-lg btn-danger'>Delete</button>
+    </form>
+</div>
+{% endif %}
+{% endblock %}

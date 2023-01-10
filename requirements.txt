@@ -1,0 +1,12 @@
+asgiref==3.6.0
+cffi==1.15.1
+cryptography==38.0.4
+Django==4.1.4
+django-appconf==1.0.5
+django-cryptography==1.1
+django-widget-tweaks==1.4.12
+passlib==1.7.4
+pycparser==2.21
+random-password-generator==2.2.0
+sqlparse==0.4.3
+tzdata==2022.7

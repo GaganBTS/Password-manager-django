@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+About Us
+{% endblock %}
+{% block css %}
+<link rel='stylesheet' href="{% static 'about.css' %}">
+{% endblock %}
+{% block content %}
+<div id='aboutheading'>
+<h1 class='text-center'>Your Privacy is Our Priority.</h1>
+</div>
+
+<section id='about'>
+    <img class='aboutimg' src='https://i.postimg.cc/NMTW1kbX/logo-removebg-preview.png'>
+    <span><h6>Secrets</h6> is a website developed by <h6> Gagandeep singh </h6>through which users can store their precious passwords whether it is the password of their
+    amazon account, netflix or even their home wifi password. The passwords are stored securely in our database so that no one else can access them.
+    User just have to create their account and they can store unlimited passwords. They can also edit or delete their secrets too.
+</span>
+<button onclick = "window.open('{% url 'contact' %}')"class='btn  btn-primary'>Contact Us</button>
+<button onclick = "window.open('/#s','_self')" class='btn  btn-primary'>Buy us a Coffee</button>
+</section>
+
+{% endblock %}

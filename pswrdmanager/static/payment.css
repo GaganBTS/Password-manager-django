@@ -1,0 +1,9 @@
+#paypal-button-container{
+    margin-top: 8%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paypal-button-label-container{
+    width: 60% !important;
+}

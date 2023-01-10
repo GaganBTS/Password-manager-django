@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+/*--------------------------------top-section------------------*/
+.jumbotron{
+    padding-top:15%;
+    padding-bottom: 15%;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/kgYCqDpf/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top center;
+    background-attachment: fixed;
+
+}
+.jumbotron .text{
+    float:left;
+    margin-left:10%;
+}
+.jumbotron-heading{
+    font-size: 4.5rem;
+     font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+
+}
+.jumbotron-text{
+    font-size: 1.5rem;
+    color: white;
+}
+#jumbotron-btn{
+    padding:2% 15%;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    background-color: whitesmoke;
+    color: #3b71ca;
+    font-family: 'Mulish', sans-serif;
+    transition: all 1.2s ease-in-out;
+    font-weight: 800;
+    font-size: larger;
+}
+#jumbotron-btn:hover{
+    transform: translateY(10px);
+}
+/*--------------------second-section---------------------------------*/
+.info{
+    padding-top:5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.info-heading{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+.card{
+    margin-right:3%;
+    transition: all 1s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.card-title{
+    font-weight: bolder !important;
+    font-size: larger !important;
+}
+/*----------------------------third-section------------------------------------------------*/
+.genpass{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+width:80%;
+padding:3%;
+margin-left:auto;
+margin-right:auto;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+margin-bottom: 3%;
+}
+.genpass .text-center{
+    font-weight: 900;
+}
+.genpassh5{
+    margin-bottom:1%;
+}
+.genpassip{
+    border: none;
+    outline: none;
+    width:50%;
+    border-bottom: 3px solid #3b71ca;
+}
+.form-group{
+    margin-bottom:2%;
+}
+.form-control{
+    padding: 5%;
+    border: none;
+    outline: none;
+}
+.genpassimg{
+    width: 45%;
+    float: right !important;
+    margin-top:-27rem;
+    outline: none;
+    border: none;
+}
+/*--------------------------------------------------fourth-section---------------------------------*/
+.support{
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    height:400px;
+    margin-bottom:2%;
+    margin-top:2%;
+    transition: all 0.5s ease-in-out;
+}
+.support .supportdiv{
+    margin-top:2%;
+    width: 50%;
+    
+}
+
+.supportdiv .btn{
+    margin-top:2.5%;
+    width: 50%;
+    font-size:large;
+    padding:2% 10% !important;
+}
+#img{
+    float:right; margin-top:-10%; margin-right:7%;
+}
+.support h2{
+    margin-bottom:2.5% !important; font-weight:800;
+}
+/*-------------------tooltip------------------*/
+.tooltip-text{
+    visibility: hidden;
+}
+.fa-copy:hover + .tooltip-text{
+    visibility: visible;
+}
+
+.active{
+transform:translateY(25px)
+}
+
+
+
+
+
+
+
+/*----------------responsiveness-mobile----------------------------------------------------*/
+@media only screen and (min-width:150px) and (max-width:768px){
+    /*-----------------top section-----------------------*/
+    .jumbotron{
+        padding-top:25%;
+        background-position: bottom;
+    }
+    .jumbotron div{
+        width: 85%;
+        margin-top:30%;
+    }
+    .jumbotron-heading{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    .jumbotron-text{
+        font-size: 1.4rem;
+    }
+    #jumbotron-btn{
+    padding:4% 10%;
+    margin-bottom: 4.4%;
+    width: 85%;
+}
+    /*----------------------------second-section----------------------------*/
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+    /*----------------------third-section----------------------------------*/
+    .genpass{
+        width: 95%;
+        margin-top:2%;
+     
+    }
+    .genpassimg{
+        display: none;
+    }
+    
+    .form-group{
+        margin-bottom:9%;
+    }
+    .genpassip{
+        width:97%;
+    }
+    .genpassh5{
+        margin-bottom:3%;
+    }
+    /*----------------------------fourth-section---------------------*/
+   .support{
+    width: 95%;
+    margin-top:5%;
+   }
+    #img{
+    margin-top:-75%;
+    margin-right: -25%;
+    }
+
+   .supportdiv{
+    width: 100%;
+    margin-left:1.5%;
+    text-align: left;
+   }
+   .supportdiv .btn{
+    width:100%;
+    font-size: large;
+    padding:5% 10% !important;
+   }
+   .support h2{
+    margin-bottom: 10% !important;
+   }
+    
+}
